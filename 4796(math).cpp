@@ -1,17 +1,23 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
+int main(void) {
 
     ios::sync_with_stdio(0);
     cin.tie(0);    
     cout.tie(0);   
 
-    int n, maxUse = 0, mx=0;
-    cin >> n;
-    mx = (n%8) > 5 ? 5 : n%8;
-    maxUse = (n/8)*5 + mx;
-    cout << maxUse << endl;
+    int count =  1;
+    while(1){
+
+        int l,p,v;
+        cin >> l >> p >> v;
+        if(v==0) break;
+        
+        int mx = min( (v % p) , l );
+        int maxUse = (v/p)*l + mx;
+        cout << "Case " << count++ << ": " << maxUse << "\n";
+        
+    }
     
-    return 0;
 }
