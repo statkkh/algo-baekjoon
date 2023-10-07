@@ -30,7 +30,7 @@ int main(void) {
         if (nx < 0 || nx >= n || ny < 0 || ny >= n) continue;
         if (dist[nx][ny] >= 0) continue;
         dist[nx][ny] = dist[cur.X][cur.Y] + 1;        
-        Q.push({nx, ny});
+        q.push({nx, ny});
       }
     }
     cout << dist[w][h] << "\n";
