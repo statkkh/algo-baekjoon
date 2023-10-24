@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-queue<pair<int, int >> q;
 
-int dx[8] = {1,0,-1,0};
-int dy[8] = {0,1,0,-1};
+
+int dx[4] = {1,0,-1,0};
+int dy[4] = {0,1,0,-1};
 int cx,cy,nx,ny;
 int m,n;
 int map[101][101];
